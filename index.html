@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <title></title>
+  </head>
+  <body>
+    <button id="settings-btn" class="settings-btn">Settings</button>
+
+    <div id="settings" class="settings">
+      <form id="settings-form">
+        <div>
+          <label>Difficulty</label>
+          <select id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Not easy</option>
+            <option value="hard">Very very not easy</option>
+          </select>
+        </div>
+      </form>
+    </div>
+
+    <div class="container" id="container">
+      <h2>Type the Way</h2>
+      <div>
+        <p>Time left: <span id="time">10s</span></p>
+        <p>Score: <span id="score">0</span></p>
+      </div>
+      <p>Type the following:</p>
+      <h1 id="word"></h1>
+      <input type="text" id="text" autocomplete="off" placeholder="Type here" />
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
